@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
 body{
     position: relative;
     width: 100%;
@@ -6,17 +11,8 @@ body{
     left:0px;
     top:0px;
     margin:0px;
-
-}
-/* ----------------------HEADER--------------------- */
-.header{
-    position: relative;
-    width: 100%;
-    height: 35%;
-    left: 0px;
-    top: 0px;
-
-    background: #FFFFFF;
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
 }
 #img_div{
     width: 100%;
@@ -24,6 +20,13 @@ body{
     background: url(header.jpg);
     background-size: cover;
     background-position: center;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 35%;
+    left: 0px;
+    top: 0px;
 }
 #title_div{
     position: absolute;
@@ -36,39 +39,88 @@ body{
 #title{
     margin:0em;
     font-size:3vw;
-    font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
-    -webkit-text-stroke:0.2px #000000;
+    -webkit-text-stroke:1.5px #000000;
     letter-spacing: 0.5em;
 
 }
-
-.button1{
-    position: absolute;
-    width: 20vw;
-    height: 5vw;
-    opacity: 0.8;
-
+.button-containter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.left-button{
-    
+.main-button{
+    width: 225px;
+    height: 65px;
+    border: 2px solid lightseagreen;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: #FFFFFF;
 }
-
-.right-button{
-    
+.main-input{
+    font-size: 20px;
+    height: 40px;
+    border: 0px;
+    width: 300px;
 }
-/* ----------------------MAIN CONTENT--------------------- */
-.main_content{
+.input-container{
     position: relative;
+}
+.main-input:focus{
+    outline: none;
+}
+.input-container::after{
+    content: "";
+    display: block;
+    text-decoration: none;
     width: 100%;
-    height: 60%;
-    background: rgba(196,196,196,0.2);
+    height: 2px;
+    background-color: lightseagreen;
+    position: absolute;
+    bottom: -1px;
+}
+#search-icon{
+    font-size: 24px;
+    margin-bottom: 2px;
+    color: #B78F7F;
+}
+.recent-recepies-section-container{
+    padding-left:  60px;
+    padding-top: 100px;
+}
+.section-title{
+    position: relative;
+    font-size: 26px;
+    padding-left: 45px;
+}
+.recent-recepies-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+    flex-wrap: wrap;
+}
+.recepie{
+    display: bloc;
+    border: 2px solid black;
+    width: 300px;
+    height: 250px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.section-title::after{
+    content: "";
+    display: block;
+    text-decoration: none;
+    width: 30%;
+    height: 2px;
+    background-color: lightslategray;
+    position: absolute;
+    bottom: -5px;
 }
 /* ----------------------FOOTER--------------------- */
 .footer{
     width: 100%;
     height: 5%;
-    background: #FFFFFF;
 }
 

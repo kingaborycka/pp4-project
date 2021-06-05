@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Kinga Borycka & Filip Jaszczyk">
+        <meta name="keywords" content="food,recipes,eat,dinner,lunch">
+        <title>Cook&Eat</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <!-- ---------------------------HEADER----------------------------- -->
+        <div class="header">
+            <div id="img_div"></div>
+            <div id="title_div"><h1 id="title">Cook&Eat</h1></div>
+        </div>
+
+        <div class="button-containter">
+            <button class="main-button" onclick="addRecipe()">Dodaj swój przepis</button>
+            <div class="input-container">
+                <input type="text" id="search-input" class="main-input" placeholder="Szukaj przepisów">
+                <i class="fas fa-search" id="search-icon"></i>
+            </div>
+        </div>
+
+        <div class="recent-recipes-section-container">
+            <h1 class="section-title">Ostatnio dodane przepisy</h1>
+            <div class="recent-recipes-container">
+                <div class="recipe"><a class="recipe_name" href=""></a></div>
+                <div class="recipe"><a class="recipe_name" href=""></a></div>
+                <div class="recipe"><a class="recipe_name" href=""></a></div>
+                <div class="recipe"><a class="recipe_name" href=""></a></div>
+                <div class="recipe"><a class="recipe_name" href=""></a></div>
+                <div class="recipe"><a class="recipe_name" href=""></a></div>
+                <div class="recipe"><a class="recipe_name" href=""></a></div>
+                <div class="recipe"><a class="recipe_name" href=""></a></div>
+                <div class="recipe"><a class="recipe_name" href=""></a></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cumque unde quis nesciunt eaque aliquid in explicabo iusto distinctio consequuntur et totam nobis cupiditate perferendis, possimus quas velit quisquam sed.
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script type='text/javascript' src='script.js'></script>
+
+    </body>
+</html>

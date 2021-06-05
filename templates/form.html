@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Kinga Borycka & Filip Jaszczyk">
+        <meta name="keywords" content="food,recipes,eat,dinner,lunch">
+        <title>Cook&Eat</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="form.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- ---------------------------HEADER----------------------------- -->
+        <div class="header">
+            <div id="img_div"></div>
+            <div id="title_div"><h1 id="title">Cook&Eat</h1></div>
+        </div>
+            <form action="" method="post" class="main-form-container">
+                <div class="title-container">
+                    <h3 class="input-header">Tytuł</h3>
+                    <input type="text" class="title-input">
+                </div>
+                <div class="ingredient-container">
+                <h3 class="input-header">Składniki</h3>
+                <div class="extensible-input-container">
+                    <div class="input-wrapper">
+                        <input type="text" class="ingredient-text"><input type="number" min="0" max="10" class="ingredient-number">
+                            <select id="units" name="units">
+                                <!-- <option value="pobierz">pobierz</option>
+                                <option value="wartosc">wartosc</option>
+                                <option value="z">z</option>
+                                <option value="bazy">bazy</option> -->
+                            </select>
+                    </div>
+                    <div class="add-input-button-container">
+                        <button id="form-button" type="button" class="add-input-button">&#43;</button>
+                    </div>
+                </div>
+                </div>
+            <div class="tips-container">
+                <h3 class="input-header">Wskazówki</h3>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="portion-count-container">
+                <h3 class="input-header">Ilość porcji</h3>
+                <input type="number" min="0" max="10">
+            </div>
+            <div class="description-container">
+                <h3 class="input-header">Opis</h3>
+                <textarea name="" id="" cols="40" rows="10"></textarea>
+            </div>
+            <div class="category-container">
+                <h3 class="input-header">Kategorie</h3>
+                <div class="category-checkbox">
+                    <!-- <div>
+                        <input type="checkbox" id="kat1" name="kat1">
+                        <label for="kat1">Kategoria 1</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="kat1" name="kat1">
+                        <label for="kat1">Kategoria 1</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="kat1" name="kat1">
+                        <label for="kat1">Kategoria 1</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="kat1" name="kat1">
+                        <label for="kat1">Kategoria 1</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="kat1" name="kat1">
+                        <label for="kat1">Kategoria 1</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="kat1" name="kat1">
+                        <label for="kat1">Kategoria 1</label>
+                    </div> -->
+                </div>
+            </div>
+            <div class="main-submit-wrapper">
+                <input type="submit" value="Dodaj przepis" type="button" id="main-submit-button">
+            </div>
+            </form>
+            <div class="footer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cumque unde quis nesciunt eaque aliquid in explicabo
+                iusto distinctio consequuntur et totam nobis cupiditate perferendis, possimus quas velit quisquam sed.
+            </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='script.js'></script>
+    <!-- <script src="app.js"></script> -->
+</html>

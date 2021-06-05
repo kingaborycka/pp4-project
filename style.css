@@ -118,6 +118,9 @@ body{
     position: absolute;
     bottom: -5px;
 }
+.description-container, .category-container, .portion-count-container{
+    margin-left: 40px;
+}
 /* ----------------------FOOTER--------------------- */
 .footer{
     width: 100%;

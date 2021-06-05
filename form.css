@@ -1,0 +1,96 @@
+.main-form-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-color: #FAFAFA;
+    /* height: 100vh; */
+}
+.title-container{
+    grid-column: 1;
+    padding-left: 40px;
+    justify-content: center;
+}
+textarea{
+    font-family: 'Roboto', sans-serif;
+}
+.title-input{
+    width: 320px;
+    font-size: 20px;
+}
+.ingredient-container{
+    grid-column: 1;
+    padding-left: 40px;
+}
+.extensible-input-container{
+    overflow-y: auto;
+    width: 500px;
+    height: 200px;
+}
+.ingredient-number{
+    width: 40px;
+    margin-left: 5px;
+}
+.ingredient-text{
+    width: 220px;
+}
+.input-wrapper{
+    margin-top: 5px;
+}
+.add-input-button{
+    margin-left: 100px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: green;
+    cursor: pointer;
+}
+.delete-input-button{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+.tips-container{
+    grid-column: 1;
+    padding-left: 40px;
+}
+.portion-count-container{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+.category-container{
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+.input-header{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 25px;
+}
+.main-submit-wrapper{
+    grid-column: 1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+#main-submit-button{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 200px;
+    height: 80px;
+    border-radius: 40px;
+    border: 2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#main-submit-button:hover{
+    color: green;
+    border-color: green;
+}

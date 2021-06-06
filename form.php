@@ -27,10 +27,13 @@
     }
 
     if (!$r2) {
-        echo "query did not execute";
-    } else {   
-        foreach ($r2 as $unit) {
-            echo '<script type="text/javascript">showUnit("'.$unit[0].'");</script>';
+            echo "query did not execute";
+        } else {   
+            foreach ($r2 as $unit) {
+                echo '<script type="text/javascript">showUnit("'.$unit[0].'");</script>';
+            }
         }
-    }
+
+?>
+
 ?>

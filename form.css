@@ -27,7 +27,7 @@ textarea{
     height: 200px;
 }
 .ingredient-number{
-    width: 40px;
+    width: 60px;
     margin-left: 5px;
 }
 .ingredient-text{
@@ -93,4 +93,53 @@ textarea{
 #main-submit-button:hover{
     color: green;
     border-color: green;
+}
+.user-container{
+    grid-column: 2/4;
+    grid-row: 3 / 4;
+}
+.user-container, .category-container, .portion-count-container{
+    margin-left: 40px;
+}
+.user-data-container, .title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.user-data-container input, .title-container input{
+    border: 0;
+    background-color: transparent;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: 20px;
+    width: 350px;
+    border-bottom: 2px solid darkgrey;
+    padding-bottom: 1px;
+    transition: 0.3s;
+}
+.user-data-container input:focus, .title-container input:focus{
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 2px solid var(--main-gray);
+    padding: 8px;
+    padding-bottom: 0;
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    display: inline-block;
+    width: 200px;
+    font-size: 24px;
+    text-align: center;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 200px;
+    cursor: pointer;
+    transition: all ease-in-out;
+}
+.custom-file-upload:hover{
+    border-color: lightblue;
 }

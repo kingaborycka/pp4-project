@@ -7,8 +7,8 @@ function showCategory(category) {
     var lab = document.createElement("LABEL");
     
     inp.setAttribute("type", "checkbox");
-    inp.setAttribute("id", category);
-    inp.setAttribute("name", category);
+    inp.setAttribute("value", category);
+    inp.setAttribute("name", "category[]");
 
     lab.setAttribute("for",category);
     lab.innerText = " "+category;
@@ -34,8 +34,19 @@ const addInputButton = document.querySelector("#form-button")
 function createInput(i) { 
     return `
 <div class="input-wrapper">
-    <input type="text" class="ingredient-text"><input type="number" class="ingredient-number">
-        <select class="units" id="units`+i+`" name="units`+i+`"></select>
+    <input type="text" name="ingredient`+i+`" class="ingredient-text"><input type="number" name="volume`+i+`" class="ingredient-number">
+        <select class="units" id="units`+i+`" name="units`+i+`">
+            <option value="gr">gr</option>
+            <option value="kg">kg</option>
+            <option value="ml">ml</option>
+            <option value="l">l</option>
+            <option value="łyżka/i">łyżka/i</option>
+            <option value="łyżeczka/i">łyżeczka/i</option>
+            <option value="szklanka/i">szklanka/i</option>
+            <option value="sztuka">sztuka/i</option>
+            <option value="szczypta">szczypta/i</option>
+            <option value="garść">garść</option>
+        </select>
     <button class="delete-input-button" type="button">&#10008</button>
 </div>
 `
@@ -44,7 +55,8 @@ function createInput(i) {
 addInputButton.addEventListener("click", (event) =>{
     index += 1;
     var input = createInput(index)
-    // var url = 'units.php';
+    var i = index.toString()
+    document.getElementsByClassName("extensible-input-container")[0].setAttribute("value", i)
     event.target.insertAdjacentHTML("beforebegin", input)
     
     const deleteInputButtons = document.querySelectorAll(".delete-input-button")
@@ -54,9 +66,6 @@ addInputButton.addEventListener("click", (event) =>{
         })
     })
     
-    // query = new Ajax.Request(url, {
-    //     method: 'get',
-    //     onSucces: getUnits()
-    // })
-    
+
 })
+

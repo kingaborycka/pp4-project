@@ -1,6 +1,6 @@
 <?php
 
-    $html = fopen("templates/index.html","r");
+    $html = fopen("templates/all.html","r");
     $str = "";
     while (!feof($html)) {
         $str .= fgets($html);
@@ -8,7 +8,7 @@
 
     require_once "../../db_connection.php";
     $pdo = new PDO($db_pg, $user, $password);
-    $s = "SELECT recipe_id, name, photo FROM recipes ORDER BY recipe_id desc LIMIT 9";
+    $s = "SELECT recipe_id, name, photo FROM recipes ORDER BY name asc";
     $r = $pdo->prepare($s);
     $r->execute();
 

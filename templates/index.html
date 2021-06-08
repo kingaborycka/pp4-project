@@ -15,41 +15,30 @@
     </head>
     <body>
         <!-- ---------------------------HEADER----------------------------- -->
-        <div class="header">
-            <div id="img_div"></div>
-            <div id="title_div"><h1 id="title">Cook&Eat</h1></div>
+        <div class="main-header-container">
+            <div class="image-container"></div>
+            <h1 id="title">Cook&Eat</h1>
         </div>
 
         <div class="button-containter">
-            <button class="main-button" onclick="addRecipe()">Dodaj swój przepis</button>
+            <a href="form.php"><button class="main-button">Dodaj swój przepis</button></a>
             <div class="input-container">
-                <input type="text" id="search-input" class="main-input" placeholder="Szukaj przepisów">
-                <i class="fas fa-search" id="search-icon"></i>
+                <a href="all.php"><button type="button" class="main-button">Wszystkie przepisy</button></a>
             </div>
         </div>
 
         <div class="recent-recipes-section-container">
             <h1 class="section-title">Ostatnio dodane przepisy</h1>
             <div class="recent-recipes-container">
-                <div class="recipe"><a class="recipe_name" href=""></a></div>
-                <div class="recipe"><a class="recipe_name" href=""></a></div>
-                <div class="recipe"><a class="recipe_name" href=""></a></div>
-                <div class="recipe"><a class="recipe_name" href=""></a></div>
-                <div class="recipe"><a class="recipe_name" href=""></a></div>
-                <div class="recipe"><a class="recipe_name" href=""></a></div>
-                <div class="recipe"><a class="recipe_name" href=""></a></div>
-                <div class="recipe"><a class="recipe_name" href=""></a></div>
-                <div class="recipe"><a class="recipe_name" href=""></a></div>
             </div>
         </div>
-        
-        <div class="footer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cumque unde quis nesciunt eaque aliquid in explicabo iusto distinctio consequuntur et totam nobis cupiditate perferendis, possimus quas velit quisquam sed.
-        </div>
+        <footer>
+            <div class="footer">Kinga Borycka & Filip Jaszczyk&#169</div>
+        </footer>
         
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script type='text/javascript' src='script.js'></script>
+        <script type='text/javascript' src='populateRecipes.js'></script>
 
     </body>
 </html>
